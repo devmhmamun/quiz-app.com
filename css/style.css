@@ -1,0 +1,625 @@
+h6 {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#quiz-app {
+  background-color: #ffffff;
+}
+
+#quiz-start {
+  background-color: #ffffff;
+}
+
+#quiz-exam {
+  background-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.quote__title, .info__title, .quiz__ques {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.quote__item, .info__item, .quiz__option {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#34495e), to(#34495e));
+  background-image: linear-gradient(to right bottom, #34495e, #34495e);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: "Lal Sabuj 400";
+  font-style: normal;
+  font-size: 62.5%;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #34495e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: _;
+      -ms-flex-pack: _;
+          justify-content: _;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@font-face {
+  font-family: 'Lal Sabuj 400';
+  src: url("../fonts/lal-sabuj-normal.ttf") format("truetype");
+}
+#quiz-app {
+  margin: 1.9rem auto;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
+  padding: 5rem;
+}
+
+#quiz-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#quiz-exam {
+  display: none;
+}
+
+.quickquiz-result {
+  display: none;
+}
+
+.btn {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0.3rem 1rem 0 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#b53471), to(#1289a7));
+  background-image: linear-gradient(to right bottom, #b53471, #1289a7);
+}
+
+.quote {
+  height: auto;
+  width: 100%;
+}
+.quote__box {
+  margin: 0 0 0.8rem 0;
+}
+.quote__item {
+  line-height: 2;
+  color: inherit;
+}
+.quote__item a {
+  color: #b53471;
+}
+.quote__item:first-child {
+  color: #1289a7;
+}
+.quote__item:nth-child(3) a {
+  color: #b53471;
+  font-family: "Roboto";
+  font-style: inherit;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.quote__item abbr {
+  color: #b53471;
+}
+
+.info {
+  display: none;
+}
+.info__box {
+  margin: 0 0 0.8rem 0;
+}
+.info__icon {
+  color: #b53471;
+}
+.info__item {
+  line-height: 2;
+  color: inherit;
+}
+
+.examtime {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0 1rem 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+}
+.examtime__tiktik {
+  color: #b53471;
+  margin: 0 0.8rem 0 0.8rem;
+}
+
+.timer {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.timer__detail {
+  width: 100%;
+  height: auto;
+  padding: 0.55rem 1rem 0.3rem 0.8rem;
+  background-color: #bdc3c7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.timer__title {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.timer__about {
+  color: #b53471;
+}
+.timer__box {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.timer__number {
+  background-color: #1289a7;
+  padding: 0.3rem 0.7rem 0 0.7rem;
+  margin: 0 0 0 0.5rem;
+  border-radius: 0.25rem;
+  color: #ecf0f1;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.timer__line {
+  height: 2px;
+  background-color: #b53471;
+  text-align: left;
+}
+
+.quiz {
+  width: 100%;
+  height: auto;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+.quiz__ques {
+  min-width: 505px;
+}
+.quiz__option {
+  cursor: pointer;
+  line-height: 2;
+  padding: 0.3rem 1rem 0 1rem;
+}
+.quiz__option:hover {
+  background-color: #f3f3f3;
+}
+.quiz__option--correct {
+  background-color: rgba(18, 137, 167, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.quiz__option--incorrect {
+  background-color: rgba(181, 52, 113, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.quiz__option--disabled {
+  pointer-events: none;
+}
+.quiz__number {
+  color: #b53471;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.quiz__check {
+  color: #1289a7;
+}
+.quiz__times {
+  color: #b53471;
+}
+
+.count {
+  width: 100%;
+  height: auto;
+  padding: 0.3rem 1rem 0.3rem 0.8rem;
+  background-color: #bdc3c7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.count__box {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.count__point {
+  color: #b53471;
+}
+.count__btn--next {
+  display: none;
+}
+.count__btn--end {
+  display: none;
+}
+
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.result__icon {
+  font-size: 4.5rem;
+}
+.result__box {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  padding: 1.5rem 0 1.5rem 0;
+}
+.result__box strong {
+  color: #b53471;
+}
+.result__info {
+  color: #b53471;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.result__btn:last-child {
+  text-transform: lowercase;
+}
+
+.quote-remove {
+  display: none !important;
+}
+
+.quiz-exam-add,
+.resilt--add,
+.info-add {
+  display: block !important;
+}
+
+.quiz-result-show,
+.count__btn--show {
+  display: block;
+}
+
+@media only screen and (max-width: 1280px) {
+  #quiz-app {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #quiz-app {
+    padding: 3.5rem;
+  }
+
+  .quiz__ques {
+    min-width: 100%;
+  }
+
+  .examtime {
+    font-family: inherit;
+    font-style: _;
+    font-size: 1.5rem;
+    font-weight: _;
+  }
+
+  .timer__detail {
+    display: _;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: _;
+        -ms-flex-pack: _;
+            justify-content: _;
+    -webkit-box-align: _;
+        -ms-flex-align: _;
+            align-items: _;
+  }
+  .timer__title {
+    padding-right: 0;
+  }
+
+  .count {
+    display: _;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: _;
+        -ms-flex-pack: _;
+            justify-content: _;
+    -webkit-box-align: _;
+        -ms-flex-align: _;
+            align-items: _;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #quiz-app {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .timer__box {
+    font-size: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .examtime {
+    display: _;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: _;
+        -ms-flex-pack: _;
+            justify-content: _;
+    -webkit-box-align: _;
+        -ms-flex-align: _;
+            align-items: _;
+  }
+
+  .count__box {
+    font-family: inherit;
+    font-style: _;
+    font-size: 1.1rem;
+    font-weight: _;
+  }
+
+  .result {
+    padding: 4rem;
+  }
+  .result__box {
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 1.2rem;
+    font-weight: _;
+  }
+}
+@media only screen and (max-width: 361px) {
+  #quiz-app {
+    padding: 1rem;
+  }
+
+  .quiz {
+    padding: 1rem 0;
+  }
+
+  .quiz__ques {
+    font-size: 1.2rem;
+  }
+
+  .timer__title {
+    font-size: 1.4rem;
+  }
+
+  .count__box {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 284px) {
+  .examtime__title {
+    font-family: inherit;
+    font-style: _;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .examtime__count {
+    font-family: inherit;
+    font-style: _;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .examtime__tiktik {
+    margin: 0 0.8rem 0 0;
+  }
+
+  .timer__box {
+    font-family: inherit;
+    font-style: _;
+    font-size: 1rem;
+    font-weight: _;
+  }
+
+  .quiz__ques {
+    font-family: inherit;
+    font-style: _;
+    font-size: 1.2rem;
+    font-weight: _;
+  }
+  .quiz__option {
+    font-family: inherit;
+    font-style: _;
+    font-size: 1.05rem;
+    font-weight: _;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

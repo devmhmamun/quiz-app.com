@@ -1,0 +1,20 @@
+$text-transforms: (
+  'nocapitalize': none,
+  'normalize': normal,
+  'capitalize': capitalize,
+  'uppercase': uppercase,
+  'lowercase': lowercase,
+  'inherit': inherit,
+  'initial': initial,
+); // go to _functions.scss
+
+$bg-colors: (
+  'quiz-app': $color-pure-white,
+  'quiz-start': $color-pure-white,
+  'quiz-exam': $color-pure-white,
+  //   'realtors': $color-secondary,
+  //   'features': $color-grey-light-2,
+  //   'homes': $color-secondary,
+  //   'gallery': $color-grey-dark-1,
+  //   'footer': $color-secondary,,,,,,,,,,,,,,
+); // go to _loops.scss

@@ -1,0 +1,12 @@
+%reset {
+  margin: 0;
+  padding: 0;
+}
+%title-bn-font {
+  // font family, size & weight property
+  @include font-property(inherit, normal, 1.3rem, 700); // mixins
+}
+%paragraph-bn-font {
+  // font family, size & weight property
+  @include font-property(inherit, normal, 1.1rem, 400); // mixins
+}

@@ -1,0 +1,29 @@
+.quote {
+  height: auto;
+  width: 100%;
+  &__title {
+    @extend %title-bn-font; // come from 'placeholders.scss'
+  }
+  &__box {
+    @include margin-property(0, 0, 0.8rem, 0); // come from 'mixins.scss'
+  }
+  &__item {
+    line-height: 2;
+    color: inherit;
+    @extend %paragraph-bn-font; // come from 'placeholders.scss'
+    a {
+      @include colors('Color 3'); // come from 'mixins.scss'
+    }
+    &:first-child {
+      @include colors('Color 2'); // come from 'mixins.scss'
+    }
+    &:nth-child(3) a {
+      @include colors('Color 3'); // come from 'mixins.scss'
+      // font family, size & weight property
+      @include font-property('Roboto', inherit, 0.9rem, 400); // mixins
+    }
+    abbr {
+      @include colors('Color 3'); // come from 'mixins.scss'
+    }
+  }
+}

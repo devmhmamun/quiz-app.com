@@ -1,0 +1,51 @@
+.quiz {
+  width: 100%;
+  height: auto;
+  @include padding-property(
+    1rem,
+    1.5rem,
+    1rem,
+    1.5rem
+  ); // come from 'mixins.scss'
+  &__ques {
+    min-width: 505px;
+    @extend %title-bn-font; // come from 'placeholders.scss'
+  }
+  &__answer {
+  }
+  &__option {
+    cursor: pointer;
+    line-height: 2;
+    @include padding-property(0.3rem, 1rem, 0, 1rem); // come from 'mixins.scss'
+    @extend %paragraph-bn-font; // come from 'placeholders.scss'
+    &:hover {
+      background-color: rgb(243, 243, 243);
+    }
+    &--correct {
+      background-color: rgba(18, 137, 167, 0.1);
+      // display flex & aligin-items property
+      @include display-property(flex, row, space-between, center); // mixins
+    }
+    &--incorrect {
+      background-color: rgba(181, 52, 113, 0.1);
+      // display flex & aligin-items property
+      @include display-property(flex, row, space-between, center); // mixins
+    }
+    &--disabled {
+      pointer-events: none;
+    }
+  }
+  &__item {
+  }
+  &__number {
+    @include colors('Color 3'); // come from 'mixins.scss'
+    // font family, size & weight property
+    @include font-property(inherit, inherit, 1.1rem, 600); // mixins
+  }
+  &__check {
+    @include colors('Color 2'); // come from 'mixins.scss'
+  }
+  &__times {
+    @include colors('Color 3'); // come from 'mixins.scss'
+  }
+}

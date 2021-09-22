@@ -1,0 +1,17 @@
+@for $i from 1 to 7 {
+  h#{7 - $i} {
+    @include font-property(
+      inherit,
+      inherit,
+      0.5rem * $i,
+      600
+    ); // come from mixins.scss
+  }
+} // automatic use in style css file
+
+// background color for each section
+@each $name, $bg-color in $bg-colors {
+  ##{$name} {
+    background-color: $bg-color;
+  }
+} // '$bg-colors' values come from 'map-variables.scss'

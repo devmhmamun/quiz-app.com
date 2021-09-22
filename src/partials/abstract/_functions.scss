@@ -1,0 +1,3 @@
+@function transform($transform-name) {
+  @return map-get($text-transforms, $transform-name);
+} // $text-transforms comes from 'map variable' and $transform-name is the argument of current function

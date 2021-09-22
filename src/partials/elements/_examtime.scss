@@ -1,0 +1,22 @@
+.examtime {
+  width: 100%;
+  height: auto;
+
+  @include margin-property(1rem, 0, 1rem, 0); // come from 'mixins.scss'
+  // font family, size & weight property
+  @include font-property(inherit, inherit, 1.8rem, 600); // mixins
+  // display flex & aligin-items property
+  @include display-property(flex, row, center, center); // mixins
+  line-height: 1;
+  &__title {
+  }
+  &__count {
+  }
+  &__tiktik {
+    @include colors('Color 3'); // come from 'mixins.scss'
+
+    @include margin-property(0, 0.8rem, 0, 0.8rem); // come from 'mixins.scss'
+  }
+  &__text {
+  }
+}

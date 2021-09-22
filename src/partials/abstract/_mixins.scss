@@ -1,0 +1,47 @@
+@mixin font-property($name, $style, $size, $weight) {
+  font: {
+    family: $name;
+    style: $style;
+    size: $size;
+    weight: $weight;
+  }
+}
+
+@mixin display-property($name, $direction, $main-axix, $cross-axix) {
+  display: $name;
+  flex-direction: $direction;
+  justify-content: $main-axix;
+  align-items: $cross-axix;
+}
+
+@mixin colors($color-primary: 'BG Color 1') {
+  @if $color-primary == 'BG Color 1' {
+    background-color: #34495e;
+  } @else if $color-primary == 'BG Color 2' {
+    background-color: #1289a7;
+  } @else if $color-primary == 'BG Color 3' {
+    background-color: #b53471;
+  } @else if $color-primary == 'Color 1' {
+    color: #34495e;
+  } @else if $color-primary == 'Color 2' {
+    color: #1289a7;
+  } @else if $color-primary == 'Color 3' {
+    color: #b53471;
+  }
+}
+
+// @mixin font-name($font-name: 'Bangla Font') {
+//   @if $font-name == 'Bangla Font' {
+//     font-family: 'Lal Sabuj 400';
+//   } @else if $font-name == 'English Font' {
+//     font-family: 'Open Sans', sans-serif;
+//   }
+// }
+
+@mixin padding-property($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+
+@mixin margin-property($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
+}

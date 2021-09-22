@@ -1,0 +1,38 @@
+#quiz-app {
+  // height: 50vh;
+  // width: 50vw;
+  // background-color: $color-gray-light;
+  margin: 1.9rem auto;
+  border-radius: 0.5rem;
+  box-shadow: $color-shadow-dark;
+
+  padding: 5rem;
+}
+#quiz-start {
+  // height: 100%;
+  // width: 100%;
+
+  // display flex & aligin-items property
+  @include display-property(
+    flex,
+    row,
+    center,
+    center
+  ); // come from 'mixiins.scss'
+}
+#quiz-exam {
+  // height: 100%;
+  // width: 100%;
+  display: none;
+  // display flex & aligin-items property
+  // @include display-property(
+  //   flex,
+  //   column,
+  //   center,
+  //   flex-start
+  // ); // come from 'mixiins.scss'
+}
+
+.quickquiz-result {
+  display: none;
+}

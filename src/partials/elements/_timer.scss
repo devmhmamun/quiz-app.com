@@ -1,0 +1,80 @@
+.timer {
+  width: 100%;
+  overflow: hidden;
+  // height: auto;
+  // @include padding-property(
+  //   0.55rem,
+  //   1rem,
+  //   0.3rem,
+  //   0.8rem
+  // ); // come from 'mixins.scss'
+  // background-color: $color-gray-dark;
+  // display flex & aligin-items property
+  @include display-property(
+    flex,
+    column,
+    center,
+    flex-start
+  ); // come from 'mixiins.scss'
+  &__detail {
+    width: 100%;
+    height: auto;
+    @include padding-property(
+      0.55rem,
+      1rem,
+      0.3rem,
+      0.8rem
+    ); // come from 'mixins.scss'
+    background-color: $color-gray-dark;
+    //display flex & aligin-items property
+    @include display-property(
+      flex,
+      row,
+      space-between,
+      center
+    ); // come from 'mixiins.scss'
+  }
+
+  &__title {
+    // @include padding-property(0, 10rem, 0, 0); // come from 'mixins.scss'
+    // font family, size & weight property
+    @include font-property(inherit, inherit, 1.5rem, 600); // mixins
+  }
+  &__about {
+    @include colors('Color 3'); // come from 'mixins.scss'
+  }
+  &__box {
+    // font family, size & weight property
+    @include font-property(inherit, inherit, 1.2rem, 600); // mixins
+    // display flex & aligin-items property
+    @include display-property(
+      flex,
+      row,
+      space-between,
+      center
+    ); // come from 'mixiins.scss'
+  }
+  &__pretext {
+  }
+  &__tiktik {
+  }
+  &__number {
+    background-color: $color-primary-4;
+    @include padding-property(
+      0.3rem,
+      0.7rem,
+      0,
+      0.7rem
+    ); // come from 'mixins.scss'
+    @include margin-property(0, 0, 0, 0.5rem); // come from 'mixins.scss'
+    border-radius: 0.25rem;
+    color: $color-gray-light;
+    // font family, size & weight property
+    @include font-property(inherit, inherit, 1.5rem, 600); // mixins
+  }
+  &__line {
+    height: 2px;
+    background-color: $color-primary-3;
+    text-align: left;
+  }
+}

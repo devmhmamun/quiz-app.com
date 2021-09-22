@@ -1,0 +1,37 @@
+.count {
+  width: 100%;
+  height: auto;
+  @include padding-property(
+    0.3rem,
+    1rem,
+    0.3rem,
+    0.8rem
+  ); // come from 'mixins.scss'
+  background-color: $color-gray-dark;
+  // display flex & aligin-items property
+  @include display-property(
+    flex,
+    row,
+    space-between,
+    center
+  ); // come from 'mixiins.scss'
+  &__box {
+    // font family, size & weight property
+    @include font-property(inherit, inherit, 1.2rem, 600); // mixins
+  }
+  &__point {
+    @include colors('Color 3'); // come from 'mixins.scss'
+  }
+  &__btngroup {
+  }
+  &__btn {
+    &--next {
+      display: none;
+      // opacity: 0;
+    }
+    &--end {
+      display: none;
+      // opacity: 0;
+    }
+  }
+}

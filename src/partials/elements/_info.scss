@@ -1,0 +1,21 @@
+.info {
+  display: none;
+  &__title {
+    @extend %title-bn-font; // come from 'placeholders.scss'
+  }
+  &__box {
+    @include margin-property(0, 0, 0.8rem, 0); // come from 'mixins.scss'
+  }
+  &__icon {
+    @include colors('Color 3'); // mixins
+  }
+  &__item {
+    line-height: 2;
+    color: inherit;
+    @extend %paragraph-bn-font; // come from 'placeholders.scss'
+  }
+  &__btngroup {
+  }
+  &__btn {
+  }
+}

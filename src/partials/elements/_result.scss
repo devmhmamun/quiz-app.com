@@ -1,0 +1,33 @@
+.result {
+  // display flex & aligin-items property
+  @include display-property(
+    flex,
+    column,
+    center,
+    center
+  ); // come from 'mixiins.scss'
+  &__icon {
+    font-size: 4.5rem;
+  }
+  &__box {
+    // font family, size & weight property
+    @include font-property(inherit, inherit, 1.5rem, 600); // mixins
+    text-align: center;
+    line-height: 1.2;
+    // padding properties
+    @include padding-property(1.5rem, 0, 1.5rem, 0); // mixins
+    strong {
+      @include colors('Color 3'); // come from 'mixins.scss'
+    }
+  }
+  &__info {
+    @include colors('Color 3'); // come from 'mixins.scss'
+    // font family, size & weight property
+    @include font-property(inherit, inherit, 1.5rem, 600); // mixins
+  }
+  &__btn {
+    &:last-child {
+      text-transform: transform(lowercase); // come from functions.scss
+    }
+  }
+}

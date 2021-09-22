@@ -1,0 +1,14 @@
+.btn {
+  // font family, size & weight property
+  @include font-property(inherit, normal, 1.2rem, 600); // mixins
+  color: $color-pure-white;
+  padding: 0.3rem 1rem 0 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-3,
+    $color-primary-4
+  );
+}

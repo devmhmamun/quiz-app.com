@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1280px) {
+  #quiz-app {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  //762
+  #quiz-app {
+    padding: 3.5rem;
+  }
+  .quiz {
+    &__ques {
+      min-width: 100%;
+    }
+  }
+  .examtime {
+    // font family, size & weight property
+    @include font-property(inherit, _, 1.5rem, _); // mixins
+  }
+  .timer {
+    &__detail {
+      // flex-direction: column;
+      // display flex & aligin-items property
+      @include display-property(_, column, _, _); // mixins
+    }
+    &__title {
+      padding-right: 0;
+    }
+  }
+
+  .count {
+    // display flex & aligin-items property
+    @include display-property(_, column, _, _); // mixins
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  //465
+  #quiz-app {
+    padding: 2rem;
+    width: 90%;
+  }
+  .timer__box {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  .examtime {
+    // display flex & aligin-items property
+    @include display-property(_, column, _, _); // mixins
+  }
+  .count {
+    &__box {
+      // font family, size & weight property
+      @include font-property(inherit, _, 1.1rem, _); // mixins
+    }
+  }
+  .result {
+    padding: 4rem;
+    &__box {
+      // font family, size & weight property
+      @include font-property(inherit, inherit, 1.2rem, _); // mixins
+    }
+  }
+}
+@media only screen and (max-width: 361px) {
+  #quiz-app {
+    padding: 1rem;
+  }
+  .quiz {
+    // @include padding-property(_, 0, _, 0);
+    padding: 1rem 0;
+  }
+  .quiz__ques {
+    font-size: 1.2rem;
+  }
+  // .timer__box {
+  //   font-size: 1rem;
+  //   flex-direction: column;
+  // }
+  .timer__title {
+    font-size: 1.4rem;
+  }
+  .count__box {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 284px) {
+  .examtime {
+    &__title {
+      // font family, size & weight property
+      @include font-property(inherit, _, 1.2rem, 600); // mixins
+    }
+    &__count {
+      // font family, size & weight property
+      @include font-property(inherit, _, 1.3rem, 600); // mixins
+    }
+    &__tiktik {
+      margin: 0 0.8rem 0 0;
+    }
+  }
+  .timer {
+    &__box {
+      // font family, size & weight property
+      @include font-property(inherit, _, 1rem, _); // mixins
+    }
+  }
+  .quiz {
+    &__ques {
+      // font family, size & weight property
+      @include font-property(inherit, _, 1.2rem, _); // mixins
+    }
+    &__option {
+      // font family, size & weight property
+      @include font-property(inherit, _, 1.05rem, _); // mixins
+    }
+  }
+}
